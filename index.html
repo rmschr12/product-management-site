@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Schroeder | Product Management for Enterprise Software</title>
+  <meta name="description" content="Product management for B2B and enterprise software: strategy, discovery, roadmaps, product ownership, and delivery, with an AI-forward approach." />
+  <link rel="canonical" href="https://rmschr12.github.io/product-management-site/" />
+  <meta name="theme-color" content="#0b1f3a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rmschr12.github.io/product-management-site/" />
+  <meta property="og:title" content="Ryan Schroeder | Product Management for Enterprise Software" />
+  <meta property="og:description" content="Strategy, discovery, roadmaps, product ownership, and delivery for B2B and enterprise software, from a certified product owner with 14+ years of enterprise experience." />
+  <meta property="og:image" content="https://rmschr12.github.io/product-management-site/ryan-headshot.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ryan Schroeder Product Management",
+  "url": "https://rmschr12.github.io/product-management-site/",
+  "image": "https://rmschr12.github.io/product-management-site/ryan-headshot.jpg",
+  "description": "Product management for B2B and enterprise software: strategy, discovery, roadmaps, product ownership, and delivery, with an AI-forward approach.",
+  "areaServed": "US",
+  "founder": {
+    "@type": "Person",
+    "name": "Ryan Schroeder",
+    "jobTitle": "Product Manager",
+    "sameAs": [
+      "https://www.linkedin.com/in/ryan-schroeder-84912750"
+    ]
+  },
+  "knowsAbout": [
+    "Product management",
+    "Product ownership",
+    "Product discovery",
+    "Roadmapping",
+    "Agile delivery",
+    "Enterprise software",
+    "ERP",
+    "IT service management",
+    "AI product features"
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0f2147;
+      --navy-mid:   #1a3565;
+      --navy-light: #2a4f8f;
+      --accent:     #e8a020;
+      --accent-lt:  #f5c355;
+      --white:      #ffffff;
+      --off-white:  #f5f7fa;
+      --gray-100:   #eef1f6;
+      --gray-300:   #c5cdd9;
+      --gray-500:   #7a8799;
+      --gray-700:   #3d4a5c;
+      --text:       #1c2635;
+      --radius:     8px;
+      --radius-lg:  16px;
+      --shadow:     0 4px 24px rgba(15,33,71,.10);
+      --shadow-lg:  0 12px 48px rgba(15,33,71,.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ─────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.25);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--navy);
+      letter-spacing: -.5px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-text {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .nav-logo-text span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--gray-300);
+      letter-spacing: .04em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--navy) !important;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      transition: background .2s, transform .15s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-lt) !important;
+      transform: translateY(-1px);
+      color: var(--navy) !important;
+    }
+
+    /* ── HERO ────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 100px 5% 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 80% 20%, rgba(232,160,32,.12) 0%, transparent 50%),
+        radial-gradient(circle at 10% 90%, rgba(42,79,143,.4) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* subtle grid pattern */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg, transparent, transparent 59px, rgba(255,255,255,.03) 59px, rgba(255,255,255,.03) 60px
+      ), repeating-linear-gradient(
+        90deg, transparent, transparent 59px, rgba(255,255,255,.03) 59px, rgba(255,255,255,.03) 60px
+      );
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232,160,32,.15);
+      border: 1px solid rgba(232,160,32,.35);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent-lt);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge svg { width: 14px; height: 14px; fill: currentColor; }
+
+    .hero h1 {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: rgba(255,255,255,.78);
+      max-width: 500px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: var(--navy);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(232,160,32,.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232,160,32,.45);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,.35);
+      transition: border-color .2s, background .2s, transform .15s;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,.7);
+      background: rgba(255,255,255,.07);
+      transform: translateY(-2px);
+    }
+
+    /* Hero stats card */
+    .hero-stats {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-stats h3 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 28px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .stat {
+      padding: 20px;
+      background: rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .stat-number {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,.6);
+      line-height: 1.4;
+    }
+
+    .hero-logos {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      font-size: 11px;
+      color: rgba(255,255,255,.4);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .hero-logos-chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255,255,255,.7);
+    }
+
+    /* ── SECTION SHARED ──────────────────────────── */
+    section {
+      padding: 90px 5%;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(26px, 3vw, 40px);
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 17px;
+      color: var(--gray-500);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* ── SERVICES ────────────────────────────────── */
+    #services {
+      background: var(--off-white);
+    }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 52px;
+      flex-wrap: wrap;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-100);
+      transition: transform .2s, box-shadow .2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--gray-100);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: var(--navy-light);
+    }
+
+    .service-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--gray-500);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .service-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .service-tag {
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--gray-100);
+      color: var(--navy-mid);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    /* ── WHY CHOOSE ──────────────────────────────── */
+    #why {
+      background: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 52px;
+    }
+
+    .why-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(232,160,32,.12);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .why-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .why-item-text h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .why-item-text p {
+      font-size: 14px;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    /* Process timeline */
+    .process-box {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      color: var(--white);
+    }
+
+    .process-box h3 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 28px;
+    }
+
+    .process-steps {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .process-step {
+      display: flex;
+      gap: 16px;
+      position: relative;
+      padding-bottom: 24px;
+    }
+
+    .process-step:last-child { padding-bottom: 0; }
+
+    .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 32px;
+      bottom: 0;
+      width: 2px;
+      background: rgba(255,255,255,.12);
+    }
+
+    .step-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--navy-light);
+      border: 2px solid rgba(255,255,255,.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-lt);
+      flex-shrink: 0;
+      z-index: 1;
+    }
+
+    .process-step h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 3px;
+      padding-top: 5px;
+    }
+
+    .process-step p {
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+      line-height: 1.5;
+    }
+
+    /* ── INDUSTRIES / FOCUS ──────────────────────── */
+    #industries {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    #industries .section-title { color: var(--white); }
+    #industries .section-sub   { color: rgba(255,255,255,.6); }
+
+    .industries-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .industry-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-align: center;
+      transition: background .2s, border-color .2s, transform .2s;
+    }
+
+    .industry-card:hover {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(232,160,32,.35);
+      transform: translateY(-3px);
+    }
+
+    .industry-emoji {
+      font-size: 36px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .industry-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .industry-card p {
+      font-size: 12px;
+      color: rgba(255,255,255,.5);
+      line-height: 1.5;
+    }
+
+    /* ── ABOUT ───────────────────────────────────── */
+    #about {
+      background: var(--off-white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-photo-wrap {
+      position: relative;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: 50% 20%;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    .cert-badge {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      background: var(--accent);
+      color: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: 0 8px 24px rgba(232,160,32,.4);
+      text-align: center;
+    }
+
+    .cert-badge strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .cert-badge span {
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .about-content .section-label { margin-bottom: 6px; }
+
+    .about-content h2 {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(24px, 2.5vw, 36px);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .about-content > p {
+      font-size: 15px;
+      color: var(--gray-700);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .credentials-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .credentials-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+
+    .cred-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ── TESTIMONIALS ────────────────────────────── */
+    #testimonials {
+      background: var(--white);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .testimonials-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--off-white);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      border: 1px solid var(--gray-100);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 16px;
+      left: 28px;
+      font-size: 80px;
+      color: var(--accent);
+      font-family: 'Merriweather', serif;
+      line-height: 1;
+      opacity: .35;
+    }
+
+    .testimonial-text {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--gray-700);
+      margin-bottom: 24px;
+      padding-top: 20px;
+      position: relative;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .author-title {
+      font-size: 12px;
+      color: var(--gray-500);
+    }
+
+    .stars {
+      color: var(--accent);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    /* ── CONTACT ─────────────────────────────────── */
+    #contact {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(26px, 3vw, 40px);
+      font-weight: 900;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .contact-left h2 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .contact-left > p {
+      font-size: 15px;
+      color: rgba(255,255,255,.65);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .contact-info-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 14px;
+      color: rgba(255,255,255,.75);
+    }
+
+    .contact-info-item svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    .contact-info-item a {
+      color: inherit;
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .contact-info-item a:hover { color: var(--accent-lt); }
+
+    /* Contact form */
+    .contact-form {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-form h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius);
+      padding: 11px 14px;
+      color: var(--white);
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color .2s, background .2s;
+      outline: none;
+    }
+
+    .form-group select option { background: var(--navy); color: var(--white); }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,.3);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      background: rgba(255,255,255,.12);
+    }
+
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      width: 100%;
+      background: var(--accent);
+      color: var(--navy);
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(232,160,32,.3);
+    }
+
+    .form-submit:hover {
+      background: var(--accent-lt);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(232,160,32,.4);
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: rgba(255,255,255,.35);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: #081529;
+      color: rgba(255,255,255,.45);
+      padding: 32px 5%;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .footer-left strong {
+      display: block;
+      color: rgba(255,255,255,.7);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.4);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .2s;
+    }
+
+    .footer-links a:hover { color: rgba(255,255,255,.7); }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-stats { display: none; }
+
+      section { padding: 60px 20px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════ -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">RS</div>
+    <div class="nav-logo-text">
+      Ryan Schroeder
+      <span>Product Management</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Me</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ═════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-badge">
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26L19 8.09l-5 4.78 1.18 6.88L10 16.77l-5.18 2.98L6 12.87 1 8.09l6.61-.83L10 1z"/></svg>
+        Certified Scrum Product Owner
+      </div>
+      <h1>Product Management That <em>Ships</em></h1>
+      <p>I turn unclear problems into shipped product. Strategy, discovery, roadmap, backlog, and delivery for B2B and enterprise software, with AI built into how I work and what I help teams build.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Start a Conversation
+        </a>
+        <a href="#services" class="btn-secondary">
+          Explore Services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <h3>Track Record at a Glance</h3>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-number">14+</div>
+          <div class="stat-label">Years of enterprise experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">CSPO</div>
+          <div class="stat-label">Certified Scrum Product Owner</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">D365 ERP projects delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">AI-900</div>
+          <div class="stat-label">Azure AI Certified</div>
+        </div>
+      </div>
+      <div class="hero-logos">
+        Experience in
+        <div class="hero-logos-chips">
+          <span class="chip">Product Strategy</span>
+          <span class="chip">Discovery</span>
+          <span class="chip">Roadmaps</span>
+          <span class="chip">Product Ownership</span>
+          <span class="chip">Enterprise Software</span>
+          <span class="chip">ERP</span>
+          <span class="chip">ITSM</span>
+          <span class="chip">AI Features</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ═════════════════════════════════════ -->
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <div>
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">Product Management, End to End</h2>
+        <p class="section-sub">From the first customer conversation to the release and what it did to the numbers. I can own a product outright or take a defined piece of the work.</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <h3>Product Strategy &amp; Roadmapping</h3>
+        <p>A clear statement of who the product is for, what it has to do next, and why. Roadmaps tied to outcomes that leadership and engineering can both read.</p>
+        <div class="service-tags">
+          <span class="service-tag">Vision</span>
+          <span class="service-tag">Roadmap</span>
+          <span class="service-tag">Prioritization</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Discovery &amp; Requirements</h3>
+        <p>Customer and stakeholder interviews, process mapping, and data review, turned into problem statements, specs, and acceptance criteria a team can build from.</p>
+        <div class="service-tags">
+          <span class="service-tag">Interviews</span>
+          <span class="service-tag">Specs</span>
+          <span class="service-tag">Acceptance Criteria</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>Product Ownership &amp; Delivery</h3>
+        <p>Hands-on product ownership: backlog, sprint planning, refinement, and day-to-day decisions with engineering and design so work keeps moving.</p>
+        <div class="service-tags">
+          <span class="service-tag">Backlog</span>
+          <span class="service-tag">Agile</span>
+          <span class="service-tag">Scrum</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Enterprise &amp; Internal Platforms</h3>
+        <p>Product management for the systems a business runs on: ERP, ITSM, and internal tools, where users are employees and adoption is the measure.</p>
+        <div class="service-tags">
+          <span class="service-tag">ERP</span>
+          <span class="service-tag">ITSM</span>
+          <span class="service-tag">Internal Tools</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>
+        </div>
+        <h3>AI Product Features</h3>
+        <p>Finding where AI earns a place in the product, scoping it to something shippable, and defining how you will know it works.</p>
+        <div class="service-tags">
+          <span class="service-tag">Use Cases</span>
+          <span class="service-tag">Scoping</span>
+          <span class="service-tag">Evaluation</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Launch, Adoption &amp; Metrics</h3>
+        <p>Release planning, training and rollout, and the metrics that show whether the product is being used and delivering what it was built for.</p>
+        <div class="service-tags">
+          <span class="service-tag">Launch</span>
+          <span class="service-tag">Adoption</span>
+          <span class="service-tag">Metrics</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE ════════════════════════════════════ -->
+<section id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+
+      <div>
+        <div class="section-label">Why Ryan Schroeder</div>
+        <h2 class="section-title">I've Been the User, the Implementer, and the Owner</h2>
+        <p class="section-sub" style="margin-bottom: 32px;">Many product managers have only seen software from the inside of a product team. I've also run the operations that depend on it and implemented it for the people who use it.</p>
+
+        <ul class="why-list">
+          <li class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Real Enterprise Experience</h4>
+              <p>Over 14 years in multiple roles at North America's largest food and beverage company and North America's largest grain milling company. I know how large organizations buy, adopt, and resist software.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="why-item-text">
+              <h4>AI-Forward</h4>
+              <p>Azure AI certified. I use AI tools daily for research synthesis, specs, and prototypes, and I help teams decide where AI belongs in their product and where it does not.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="why-item-text">
+              <h4>I've Implemented What I Manage</h4>
+              <p>5+ years delivering Dynamics 365 across 10+ projects and two full ServiceNow implementations. I have gathered the requirements, configured the system, and supported the users myself.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="why-item-text">
+              <h4>Clear Scope, Clear Decisions</h4>
+              <p>Priorities, trade-offs, and what done means are written down and agreed before the work starts. If something changes, the team hears it from me first.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="process-box">
+        <h3>How I Work</h3>
+        <ol class="process-steps">
+          <li class="process-step">
+            <div class="step-dot">1</div>
+            <div>
+              <h4>Understand the Problem</h4>
+              <p>Talk to customers, users, and stakeholders, and look at the data. Agree on the problem and how success will be measured before proposing a solution.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-dot">2</div>
+            <div>
+              <h4>Define &amp; Prioritize</h4>
+              <p>Turn what was learned into a roadmap and a backlog ordered by value and effort, with the reasoning visible.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-dot">3</div>
+            <div>
+              <h4>Build With the Team</h4>
+              <p>Work with engineering and design every day: refine, answer questions fast, make trade-offs, and accept work against clear criteria.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-dot">4</div>
+            <div>
+              <h4>Launch &amp; Adoption</h4>
+              <p>Plan the release, prepare the people who will use and support it, and make sure it lands with the audience it was built for.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <div class="step-dot">5</div>
+            <div>
+              <h4>Measure &amp; Iterate</h4>
+              <p>Check the results against the goal, share what happened plainly, and feed it into what gets built next.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ ABOUT ═════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <div class="about-photo-wrap">
+        <img class="about-photo" src="ryan-headshot.jpg" alt="Ryan Schroeder" />
+        <div class="cert-badge">
+          <strong>CSPO</strong>
+          <span>Certified</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-label">About Ryan</div>
+        <h2>The Product Manager<br/>Who's Done the Work</h2>
+
+        <p>I'm a product manager and Certified Scrum Product Owner with 14+ years of enterprise experience. I connect what users need with what the business is trying to achieve, and turn ambiguity into clear direction for engineering and design teams.</p>
+
+        <p>My approach starts with listening: to customers, to data, and to the people building the product. I came to product through operations and enterprise software delivery, so I have lived with the consequences of product decisions as a user and as an implementer. Whether defining something new or untangling a complex backlog, I bring structure and a bias toward shipping.</p>
+
+        <ul class="credentials-list">
+          <li><span class="cred-dot"></span>Certified Scrum Product Owner (CSPO)</li>
+          <li><span class="cred-dot"></span>ITIL Expert</li>
+          <li><span class="cred-dot"></span>Microsoft Certified: Dynamics 365 Finance Functional Consultant (MB-310)</li>
+          <li><span class="cred-dot"></span>Microsoft Certified: Azure AI Fundamentals</li>
+          <li><span class="cred-dot"></span>14+ years of enterprise experience</li>
+          <li><span class="cred-dot"></span>Based in Denver, CO</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CONTACT ═══════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <div class="contact-left">
+        <div class="section-label" style="color: var(--accent);">Let's Talk</div>
+        <h2>Have a Product<br/><em>Problem</em> to Solve?</h2>
+        <p>Whether you need a product manager to lead a new initiative, someone to take over a backlog that has lost its way, or a second opinion on a roadmap, I'd like to hear about it.</p>
+
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 8.29 8.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Free 30-minute discovery call: send a note and I'll reply with times
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:rmschr12@gmail.com">rmschr12@gmail.com</a>
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Available now for contract, fractional, and full-time roles, remote or Denver
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Typical response time: within 24 hours
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/ryan-schroeder-84912750" target="_blank" rel="noopener noreferrer">linkedin.com/in/ryan-schroeder-84912750</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xvzlwgwn" method="POST">
+        <h3>Send a Message</h3>
+        <input type="hidden" name="_subject" value="New inquiry from product management site" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" />
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Work Email</label>
+          <input type="email" name="_replyto" placeholder="jane@yourcompany.com" required />
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" name="company" placeholder="Your Company Name" required />
+        </div>
+        <div class="form-group">
+          <label>Tell me what you are looking for</label>
+          <textarea name="message" placeholder="Briefly describe your situation, timeline, and what you're hoping to achieve…" required></textarea>
+        </div>
+        <button class="form-submit" type="submit">Send Message →</button>
+        <p class="form-note">No spam, ever. Your information is kept strictly private.</p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Ryan Schroeder Product Management</strong>
+      Certified Scrum Product Owner · Denver, CO
+    </div>
+    <ul class="footer-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Animate stats on scroll
+  const observerOptions = { threshold: 0.2 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.service-card, .why-item, .industry-card, .testimonial-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
